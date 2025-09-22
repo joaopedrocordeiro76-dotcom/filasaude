@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fila+ Saúde — Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-white shadow">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-gradient-to-r from-green-400 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold">FS</div>
+        <div>
+          <h1 class="text-lg font-semibold">Fila+ Saúde</h1>
+          <p class="text-xs text-gray-500">Agenda + fila virtual + teleconsulta</p>
+        </div>
+      </div>
+      <div>
+        <a href="#planos" class="text-sm font-medium mr-4">Planos</a>
+        <a href="#contato" class="text-sm font-medium">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
+    <section>
+      <h2 class="text-4xl font-extrabold leading-tight">Clínicas sem filas. Pacientes mais felizes.</h2>
+      <p class="mt-4 text-lg text-gray-600">Agendamento online, fila virtual com chamadas automáticas, lembretes por WhatsApp e teleconsulta em um só lugar — pensado para consultórios e clínicas pequenas.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="#planos" class="bg-teal-600 text-white px-5 py-3 rounded-lg shadow font-semibold">Teste grátis 30 dias</a>
+        <a href="#demo" class="px-5 py-3 rounded-lg border border-gray-200 hover:shadow">Agendar demo</a>
+      </div>
+
+      <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+        <li class="flex items-start gap-3"><span class="inline-block w-8 h-8 bg-green-100 text-green-700 rounded-full flex items-center justify-center">✓</span> Reduza faltas e atrasos</li>
+        <li class="flex items-start gap-3"><span class="inline-block w-8 h-8 bg-green-100 text-green-700 rounded-full flex items-center justify-center">✓</span> Lembretes por WhatsApp/SMS</li>
+        <li class="flex items-start gap-3"><span class="inline-block w-8 h-8 bg-green-100 text-green-700 rounded-full flex items-center justify-center">✓</span> Teleconsulta com 1 clique</li>
+        <li class="flex items-start gap-3"><span class="inline-block w-8 h-8 bg-green-100 text-green-700 rounded-full flex items-center justify-center">✓</span> Dashboard simples para profissionais</li>
+      </ul>
+    </section>
+
+    <aside class="flex flex-col gap-5">
+      <div class="rounded-2xl bg-white p-5 shadow">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs text-gray-500">Agenda — Hoje</div>
+            <div class="text-lg font-semibold">Clínica São Lucas</div>
+          </div>
+          <div class="text-sm text-gray-600">3 pacientes na fila</div>
+        </div>
+
+        <div class="mt-4 grid gap-3">
+          <div class="flex items-center justify-between p-3 rounded-lg bg-gray-50">
+            <div>
+              <div class="text-sm font-medium">09:00 — Ana Silva</div>
+              <div class="text-xs text-gray-500">Consulta Presencial • Dentista</div>
+            </div>
+            <div class="text-xs text-gray-600">Status: Em espera</div>
+          </div>
+
+          <div class="flex items-center justify-between p-3 rounded-lg bg-white border">
+            <div>
+              <div class="text-sm font-medium">09:30 — João Pedro</div>
+              <div class="text-xs text-gray-500">Teleconsulta • Psicólogo</div>
+            </div>
+            <div class="flex gap-2">
+              <button class="px-3 py-1 text-xs border rounded">Entrar</button>
+              <button class="px-3 py-1 text-xs bg-teal-600 text-white rounded">Chamar</button>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-gray-50 text-xs text-gray-500">Fila virtual: 3 — Próximo: João Pedro — Tempo médio: 8 min</div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white p-5 shadow">
+        <div class="text-sm text-gray-500">Agendamento</div>
+        <div class="mt-3 grid gap-2">
+          <input class="border rounded px-3 py-2" placeholder="Nome completo" />
+          <input class="border rounded px-3 py-2" placeholder="Telefone (WhatsApp)" />
+          <select class="border rounded px-3 py-2">
+            <option>Consulta Presencial</option>
+            <option>Teleconsulta</option>
+          </select>
+          <div class="flex gap-2">
+            <button class="flex-1 bg-teal-600 text-white px-4 py-2 rounded">Reservar horário</button>
+            <button class="flex-1 border px-4 py-2 rounded">Ver disponibilidade</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white p-4 text-xs text-gray-600 shadow">
+        <div class="font-medium">Notificações</div>
+        <div class="mt-3">
+          <div>09:00 — Lembrete enviado (WhatsApp)</div>
+          <div class="mt-2 text-gray-500">08:52 — Mensagem de confirmação recebida</div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <section id="planos" class="py-16 bg-gray-100">
+    <h2 class="text-2xl font-bold text-center mb-8">Planos para todas as clínicas</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold">Básico</h3>
+        <p class="mt-4 text-3xl font-bold">R$79/mês</p>
+        <p class="text-gray-500">1 profissional</p>
+        <a href="#contato" class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg">Assinar</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-blue-600">
+        <h3 class="text-xl font-semibold">Pro</h3>
+        <p class="mt-4 text-3xl font-bold">R$199/mês</p>
+        <p class="text-gray-500">Até 5 profissionais</p>
+        <a href="#contato" class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg">Assinar</a>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow text-center">
+        <h3 class="text-xl font-semibold">Enterprise</h3>
+        <p class="mt-4 text-3xl font-bold">R$499/mês</p>
+        <p class="text-gray-500">Clínicas maiores</p>
+        <a href="#contato" class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg">Assinar</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato" class="border-t bg-white mt-12">
+    <div class="max-w-5xl mx-auto px-6 py-8 text-sm text-gray-600 flex flex-col md:flex-row justify-between">
+      <div>© Fila+ Saúde — Feito por João Pedro</div>
+      <div class="mt-4 md:mt-0">Contato: <a href="mailto:joao@exemplo.com" class="text-blue-600">joao@exemplo.com</a></div>
+    </div>
+  </footer>
+
+</body>
+</html>
